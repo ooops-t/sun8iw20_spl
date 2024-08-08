@@ -56,10 +56,10 @@ const boot0_file_head_t  BT0_head = {
 		{0},/* reserver[2]  */
 		/*unsigned int     dram_para[32] ;*/
 		{
-			0x00000318,
+			0x00000318, // 792
 			0x00000003,
 			0x007b7bfb,
-			0x00000000,
+			0x00000001,
 			0x000010d2,
 			0x00000000,
 			0x00001c70,
@@ -77,16 +77,16 @@ const boot0_file_head_t  BT0_head = {
 			0x00000000,
 			0x00000000,
 			0x00000000,
-			0x00340000,
-			0x00000046,
-			0x34000100,
+			0x00770000,
+			0x00000002,
+			0x34050100,
 		},
 		/*__s32	uart_port;*/
 		0,
 		/*normal_gpio_cfg   uart_ctrl[2];*/
 		{
-			{5, 2, 6, 1, 0xff, 0xff, {0} }, /*PE2: 6--RX*/
-			{5, 3, 6, 1, 0xff, 0xff, {0} }, /*PE3: 6--TX*/
+			{7, 17, 7, 1, 0xff, 0xff, {0} }, /* PG17: UART0-TX */
+			{7, 18, 7, 1, 0xff, 0xff, {0} }, /* PG18: UART0-RX */
 		},
 		/*__s32 enable_jtag;*/
 		0,
