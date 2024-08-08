@@ -11,5 +11,5 @@
 #define CFG_SYS_INIT_RAM_SIZE 0x10000
 #define CFG_USE_DCACHE 1
 #define CFG_USE_MAEE 1
-#define PLATFORM_LIBGCC -L /usr/lib/gcc/arm-none-eabi/8.3.1 -l:libgcc.a
+#define PLATFORM_LIBGCC -L /usr/lib/gcc/arm-none-eabi/12.2.1 -l:libgcc.a
 #endif

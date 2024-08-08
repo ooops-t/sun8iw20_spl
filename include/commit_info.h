@@ -1,1 +1,1 @@
-#define CI_INFO ""
+#define CI_INFO "aedc18e"
